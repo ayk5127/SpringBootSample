@@ -7,3 +7,30 @@
 .th-width {
   width: 200px;
 }
+
+/* 検索フォーム全体を横並びにする */
+#user-search-form {
+  display: flex;
+  align-items: flex-end;  /* 入力欄の下端とボタンを揃える */
+  gap: 16px;              /* 各要素の間隔 */
+  flex-wrap: wrap;        /* 画面が狭い時に折り返す */
+}
+
+/* ラベル＋入力を1セットとして横並び */
+#user-search-form .form-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;       /* Bootstrapの下マージンを消す */
+}
+
+/* ラベル周りの微調整 */
+#user-search-form label {
+  margin-bottom: 0;       /* labelの下余白を消す */
+  white-space: nowrap;    /* 改行させない */
+}
+
+/* 入力幅は好みで調整 */
+#user-search-form input.form-control {
+  width: 220px;
+}
